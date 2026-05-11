@@ -1,6 +1,6 @@
 services:
   server:
-    image: ghcr.io/aet-devops25/w05-template/server:latest
+    image: ghcr.io/aet-devops26/w04-template/server:latest
     ports:
       - "8080:8080"
     environment:
@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
 
   client:
-    image: ghcr.io/aet-devops25/w05-template/client:latest
+    image: ghcr.io/aet-devops26/w04-template/client:latest
     ports:
       - "3000:3000"
     environment:
