@@ -22,8 +22,8 @@ This project includes:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/w05-template.git
-cd w05-template
+git clone https://github.com/yourusername/w04-template.git
+cd w04-template
 ```
 
 ### Client Setup
