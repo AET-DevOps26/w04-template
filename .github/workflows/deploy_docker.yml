@@ -34,6 +34,8 @@ jobs:
             echo "CLIENT_HOST=client.${{ vars.AZURE_PUBLIC_IP }}.nip.io" >> .env.prod
             echo "SERVER_HOST=api.${{ vars.AZURE_PUBLIC_IP }}.nip.io" >> .env.prod
             echo "PUBLIC_API_URL=https://api.${{ vars.AZURE_PUBLIC_IP }}.nip.io/api" >> .env.prod
+            echo "SERVER_IMAGE=ghcr.io/${{ github.repository }}/server:latest" >> .env.prod
+            echo "CLIENT_IMAGE=ghcr.io/${{ github.repository }}/client:latest" >> .env.prod
 
       - name: SSH to VM and Execute Docker-Compose Up
         uses: appleboy/ssh-action@v1.0.3
