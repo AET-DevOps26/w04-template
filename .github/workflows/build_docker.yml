@@ -3,6 +3,10 @@ name: Build Docker Images
 on:
   push:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   test:
     name: Run Java Tests
